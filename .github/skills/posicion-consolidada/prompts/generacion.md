@@ -15,7 +15,7 @@ Reglas:
 
 Formato esperado de respuesta:
 ```
-📋 Posición Consolidada
+ Posición Consolidada
 
     Nombre:     <nombre_completo>
     Cedula:     <cedula>

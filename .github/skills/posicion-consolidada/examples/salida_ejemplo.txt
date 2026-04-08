@@ -1,5 +1,6 @@
-📋 Posición Consolidada
+Posición Consolidada
 
-👤 Nombre:     Vero García
-🏠 Dirección:  La Carolina, Quito
-💰 Saldo:      USD 1,000.00
+Nombre:     Maria García
+Cedula:     123
+Dirección:  La Carolina, Quito
+Saldo:      USD 1,000.00

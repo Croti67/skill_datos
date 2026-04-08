@@ -27,12 +27,12 @@
   ],
   "services": [
     {
-      "name": "servicio-info-basica",
+      "name": "personas",
       "url": "http://localhost:8001",
       "description": "Devuelve nombre y dirección dado un número de cédula."
     },
     {
-      "name": "servicio-consulta-saldos",
+      "name": "saldos",
       "url": "http://localhost:8002",
       "description": "Devuelve el saldo en USD dado un nombre completo."
     }

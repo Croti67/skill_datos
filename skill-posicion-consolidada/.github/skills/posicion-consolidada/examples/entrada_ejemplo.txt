@@ -1,0 +1,2 @@
+Mensaje de ejemplo del usuario:
+"Puedes darme la posición consolidada del número de identificación 1234567890"

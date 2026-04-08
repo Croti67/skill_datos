@@ -1,0 +1,44 @@
+{
+  "name": "posicion-consolidada",
+  "displayName": "Consulta de Posición Consolidada",
+  "version": "1.0.0",
+  "language": "es",
+  "description": "Consulta la posición consolidada de un cliente a partir de su número de identificación. Orquesta dos servicios locales: información básica y consulta de saldos.",
+  "inputs": [
+    {
+      "source": "user-message",
+      "field": "numero_identificacion",
+      "required": true,
+      "description": "Número de identificación (cédula) del cliente, extraído del mensaje del usuario."
+    }
+  ],
+  "outputs": [
+    {
+      "type": "chat-response",
+      "description": "Resumen consolidado con nombre, dirección y saldo del cliente."
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/consultar_posicion.py",
+      "runtime": "python3",
+      "description": "Orquestador que llama los dos servicios locales y devuelve el resultado consolidado."
+    }
+  ],
+  "services": [
+    {
+      "name": "servicio-info-basica",
+      "url": "http://localhost:8001",
+      "description": "Devuelve nombre y dirección dado un número de cédula."
+    },
+    {
+      "name": "servicio-consulta-saldos",
+      "url": "http://localhost:8002",
+      "description": "Devuelve el saldo en USD dado un nombre completo."
+    }
+  ],
+  "target": {
+    "client": "github-copilot-chat",
+    "editor": "vscode"
+  }
+}

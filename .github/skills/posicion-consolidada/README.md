@@ -8,10 +8,10 @@ orquestando dos servicios locales en Python.
 1. Abre dos terminales y levanta los servicios:
    ```bash
    # Terminal 1
-   python3 .github/skills/posicion-consolidada/scripts/servicio_info_basica.py
+   python3 .github/skills/posicion-consolidada/scripts/personas.py
 
    # Terminal 2
-   python3 .github/skills/posicion-consolidada/scripts/servicio_saldos.py
+   python3 .github/skills/posicion-consolidada/scripts/saldos.py
    ```
 
 2. Abre Copilot Chat y escribe:
